@@ -1,16 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Navbar from './components/Navbar.jsx'
-import Profile from './components/Profile.jsx'
-import About from './components/About.jsx'
-import Service from './components/Service.jsx'
-import Projects from './components/Projects.jsx'
-import Contact from './components/Contact.jsx'
-import Certifications from './components/Certifications.jsx'
-import TechSkills from './components/Techskills.jsx'
-import Experience from './components/Experience.jsx'
+import React from 'react';
+import './App.css';
+import Navbar from './components/Navbar.jsx';
+import Profile from './components/Profile.jsx';
+import About from './components/About.jsx';
+import Service from './components/Service.jsx';
+import Projects from './components/Projects.jsx';
+import Contact from './components/Contact.jsx';
+import Certifications from './components/Certifications.jsx';
+import TechSkills from './components/Techskills.jsx';
+import Experience from './components/Experience.jsx';
 
 function App() {
   return (
