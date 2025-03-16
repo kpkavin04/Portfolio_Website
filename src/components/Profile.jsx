@@ -20,7 +20,7 @@ const Profile = () => {
                 Hi, I'm {" "}
                 <span className='text-transparent bg-clip-text 
                                     bg-gradient-to-r from-green-400
-                                    to-blue-500'>Parthipan Kavin</span>
+                                    to-blue-500'>Kavin</span>
             </h1>
             <p className={`mt-2 text-3xl text-white-100 font-bold`}>
                 I'm a <TypewriterText texts={typedItems} />

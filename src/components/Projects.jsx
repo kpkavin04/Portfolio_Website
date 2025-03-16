@@ -17,18 +17,6 @@ const projects = [
         image: VMIMG,
         github: "https://github.com/me50/kpkavin04.git"
     },
-    {
-        
-    },
-    {
-
-    },
-    {
-
-    },
-    {
-
-    },
 ]
 const Projects = () => {
     return (

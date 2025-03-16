@@ -39,7 +39,7 @@ const Experience = () => {
                     {experiences.map((exp) => (
                         <VerticalTimelineElement
                             key={exp.id}
-                            className="vertical-timeline-element--work"
+                            className="vertical-timeline-element--work hover:scale-105"
                             contentStyle={{ background: "#1f2937", color: "#fff" }} // Dark theme styling
                             contentArrowStyle={{ borderRight: "7px solid #3b82f6" }} // Arrow styling
                             date={exp.date}
