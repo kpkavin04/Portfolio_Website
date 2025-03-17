@@ -1,6 +1,6 @@
 {
   "name": "pwebsite",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://kpkavin04.github.io/Portfolio_Website/",
