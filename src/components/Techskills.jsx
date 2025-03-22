@@ -102,7 +102,6 @@ const TechSkills = () => {
                 rowSize = rowSize === 6 ? 5 : 6;
             }
         }
-
         return dynamicRows;
     };
 

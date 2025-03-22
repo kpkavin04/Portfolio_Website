@@ -2,6 +2,8 @@ import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { FaBriefcase } from 'react-icons/fa';
+import quadrant_pic from '../assets/kavin_quadrant_pic.png';
+import transcom_pic from '../assets/kavin_transcom_pic.png';
 
 const experiences = [
     {
@@ -9,7 +11,7 @@ const experiences = [
         title: "Machine Learning Analyst",
         company: "NUS Fintech Society",
         description: "Researched and implemented the RAG component in a Financial Literacy AI Tutor project. Predicted stock prices using LSTM and deployed via FastAPI.",
-        image: "/assets/nus_fintech.jpg", 
+        image: quadrant_pic, 
         date: "Aug 2024 - Present"
     },
     {
@@ -17,7 +19,7 @@ const experiences = [
         title: "Cyber Security Intern",
         company: "Quadrant360",
         description: "Conducted vulnerability assessments, documented reports, and co-developed a controlled demonstration of malware-based attacks.",
-        image: 'src/assets/kavin_quadrant_pic.JPG',
+        image: quadrant_pic,
         date: "Jan 2024 - Apr 2024"
     },
     {
@@ -25,7 +27,7 @@ const experiences = [
         title: "Deputy Team Leader",
         company: "Singapore Police Force (Transcom)",
         description: "Led a team of 100+ officers, planned operations, managed crisis responses, and improved documentation efficiency using Excel.",
-        image: "src/assets/kavin_transcom_pic.JPG", 
+        image: transcom_pic, 
         date: "Dec 2022 - Nov 2023"
     }
 ];
@@ -40,11 +42,11 @@ const Experience = () => {
                         <VerticalTimelineElement
                             key={exp.id}
                             className="vertical-timeline-element--work hover:scale-105"
-                            contentStyle={{ background: "#1f2937", color: "#fff" }} // Dark theme styling
-                            contentArrowStyle={{ borderRight: "7px solid #3b82f6" }} // Arrow styling
+                            contentStyle={{ background: "#1f2937", color: "#fff" }} 
+                            contentArrowStyle={{ borderRight: "7px solid #3b82f6" }} 
                             date={exp.date}
-                            iconStyle={{ background: "#3b82f6", color: "#fff" }} // Icon styling
-                            icon={<FaBriefcase />} // Icon for the experience
+                            iconStyle={{ background: "#3b82f6", color: "#fff" }} 
+                            icon={<FaBriefcase />}
                         >
                             <h3 className="text-xl font-bold">{exp.title}</h3>
                             <h4 className="text-lg text-gray-300">{exp.company}</h4>
