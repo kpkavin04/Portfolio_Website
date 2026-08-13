@@ -1,22 +1,39 @@
 import React from 'react'
-import AboutImg from '../assets/kavin_buggy_ride.jpg'
+import AboutImg from '../assets/kavin_buggy_ride.webp'
 
 const About = () => {
     return (
-        <div className='bg-black text-white py-10' id='about'>
-            <div className='container mx-auto px-8 md:px-16 lg:px-24'>
-                <h2 className='text-4xl font-bold text-center mb-12'>About Me</h2>
-                <div className='flex flex-col md:flex-row items-center md:space-x-12'>
-                    <img src={AboutImg} alt=""
-                        className='w-72 h-80 rounded object-cover mb-8 md:mb-0'/>
-                    <div className='flex-1'>
-                        <p className='mt-4 text-lg py-2'>
-                            I'm a Computer Science undergraduate at the National University of Singapore (NUS) with a strong interest in software engineering and data-driven solutions. I enjoy designing and building scalable, user-focused applications that solve real-world problems. From writing clean, efficient code to deploying full-stack projects, I’m always eager to learn and push my technical boundaries and explore new tools and frameworks.
+        <section className='bg-black text-white py-16 px-6' id='about'>
+            <div className='container mx-auto md:px-16 lg:px-24'>
+                <h2 className='text-3xl md:text-4xl font-bold text-center mb-12'>About Me</h2>
+                <div className='flex flex-col md:flex-row items-center md:items-start md:space-x-12'>
+                    <img
+                        src={AboutImg}
+                        alt='Kavin Parthipan'
+                        width='288'
+                        height='320'
+                        loading='lazy'
+                        className='w-72 h-80 rounded object-cover mb-8 md:mb-0 shrink-0'
+                    />
+                    <div className='flex-1 space-y-4 text-base md:text-lg text-gray-300'>
+                        <p>
+                            I work mainly on backend systems: the services, data pipelines and job
+                            orchestration that sit behind a product rather than the interface on top of it.
+                            I&apos;m in my penultimate year, and this is the work I want to keep doing — most
+                            recently as a backend engineering intern, and on my own time building services to
+                            understand things I can&apos;t pick up from reading about them.
+                        </p>
+                        <p>
+                            I&apos;ve been fortunate to work with people who were better than me at most of
+                            this, and the fastest I have ever improved was when someone reviewed my code and
+                            told me plainly what was wrong with it. So I ask questions early instead of
+                            guessing, and I read how others have solved a problem before assuming my own
+                            approach is the right one.
                         </p>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

@@ -1,26 +1,63 @@
-# Kavin's portfolio website
+# Portfolio — Kavin Parthipan
 
-This is a personal portfolio website built using **React**. It showcases an overview of my **projects**, **experience**, **certifications**, and **technical skills**, along with **contact information** for networking or job opportunities.
+Personal portfolio site for a Year 3 Computer Science undergraduate at the National
+University of Singapore. It covers projects, work experience, education,
+certifications and technical skills.
 
-## Features
+**Live site:** https://kpkavin04.github.io/portfolio_website/
 
-- Project highlights with descriptions and links  
-- Work experience and roles  
-- Certifications and achievements  
-- Technologies and tools I work with  
-- Contact form and social media links  
+## Tech stack
 
-## Technologies Used
+- React 19
+- Vite 6
+- Tailwind CSS 3
+- Swiper (certifications carousel), react-scroll (section navigation), react-icons
 
-- React  
-- Tailwind CSS
-- Vite
+## Local development
+
+```bash
+npm install
+npm run dev        # start the dev server
+npm run lint       # eslint
+npm run build      # production build into dist/
+npm run preview    # serve the production build locally
+```
+
+## Images
+
+Source images are committed as WebP, resized to roughly twice their rendered size.
+To re-run that conversion after adding new images, drop the originals into
+`src/assets/` and run:
+
+```bash
+npm run optimize:images
+```
+
+Widths per image are configured at the top of `scripts/optimize-images.mjs`.
+The social link-preview image is generated separately with `npm run generate:og`.
+
+## Resume
+
+The resume is served as a static file from `public/Kavin_Parthipan_Resume.pdf`.
+Replace that file in place to publish an updated version; the filename is
+referenced from `src/data/site.js`.
 
 ## Deployment
-This site is deployed on GitHub Pages
-Live Site: https://kpkavin04.github.io/portfolio_website/
+
+Deployed to GitHub Pages from the `gh-pages` branch:
+
+```bash
+npm run deploy     # builds, then publishes dist/ via gh-pages
+```
+
+`vite.config.js` sets `base` to `/portfolio_website/` because the site is served
+from a repository subpath. That file also documents the steps required to move to
+a custom domain.
+
+CI runs lint and build on every push and pull request to `main`
+(`.github/workflows/ci.yml`).
 
 ## Contact
-Feel free to reach out to me through the contact section on the website or via:
-Email: e1398179@u.nus.edu
-LinkedIn: https://www.linkedin.com/in/kavin-parthipan/
+
+- Email: kpkavin04@gmail.com
+- LinkedIn: https://www.linkedin.com/in/kavin-parthipan/

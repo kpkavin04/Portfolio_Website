@@ -1,9 +1,7 @@
 import React from 'react';
-import './App.css';
 import Navbar from './components/Navbar.jsx';
 import Profile from './components/Profile.jsx';
 import About from './components/About.jsx';
-import Service from './components/Service.jsx';
 import Projects from './components/Projects.jsx';
 import Contact from './components/Contact.jsx';
 import Certifications from './components/Certifications.jsx';
@@ -12,16 +10,17 @@ import Experience from './components/Experience.jsx';
 
 function App() {
   return (
-    <div>
+    <div className='bg-black min-h-screen'>
       <Navbar />
-      <Profile />
-      <About />
-      <Service />
-      <Projects />
-      <Experience />
-      <Certifications />
-      <TechSkills />
-      <Contact />
+      <main>
+        <Profile />
+        <About />
+        <Experience />
+        <Projects />
+        <TechSkills />
+        <Certifications />
+        <Contact />
+      </main>
     </div>
   )
 }
